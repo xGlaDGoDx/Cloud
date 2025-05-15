@@ -10,7 +10,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const client = net.createConnection({ port: 3000 }, () => {
+const client = net.createConnection(3000, "217.114.4.241", () => {
     console.log('Connected to Word Sorter Server');
 });
 

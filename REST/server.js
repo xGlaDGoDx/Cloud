@@ -35,6 +35,8 @@ app.get('/api/todos/:id', (req, res) => {
 });
 
 app.post('/api/todos', (req, res) => {
+    console.log(req.body);
+
     const todos = readData();
     const newTodo = {
         id: todos.length ? todos[todos.length - 1].id + 1 : 1,
